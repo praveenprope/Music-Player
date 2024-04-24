@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Music Player </title>
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lexend+Deca:wght@600&family=Passion+One&display=swap" rel="stylesheet">
+<body>
+
+    <style>
+        .search-container {
+          text-align: center;
+          margin-top: 6px;
+        }
+        input[type=text] {
+          width: 200px;
+          padding: 6px;
+          margin: 0 10px;
+          border-radius: 5px;
+          border: 1px solid #ccc;
+          font-size: 16px;
+        }
+        button {
+          padding: 6px 20px;
+          border-radius: 5px;
+          background-color: #60ff00;
+          color: white;
+          border: none;
+          cursor: pointer;
+          font-size: 16px;
+        }
+        button:hover {
+          background-color: #48bd00;
+        }
+        #result {
+          margin-top: 20px;
+          font-size: 18px;
+          text-align: center;
+        }
+      </style>
+
+
+    <video autoplay controls loop  src="Video/vid21.mp4"></video>
+    <div class="container">
+        
+        <div class="heading">
+            <h1> NEW RELEASED </h1>
+                <p></p>
+            </div>
+            <div class="button">
+                <a href="wav.html">Explore Now </a>
+            </div>
+        </div>
+    <nav class="navbar">
+        <a href="/wav.html">WAV PLAYER</a>
+        <a href="wav.html">NEW RELEASED</a>
+        <a href="http://">CONTACT</a>
+        <a href="http://">ABOUT</a>
+        <div class="search-container">
+            <input type="text" id="searchInput" placeholder="Search...">
+            <button onclick="search()">Search</button>
+          </div>
+          
+          <div id="result"></div>
+    </nav>
+
+
+
+</body>
+</html>
